@@ -6,7 +6,6 @@ from django.http import HttpResponse
 import random
 import string
 
-
 # Function to generate a random name
 def get_random_name():
     return (''.join([random.choice(string.ascii_letters + string.digits) for n in range(32)]))
